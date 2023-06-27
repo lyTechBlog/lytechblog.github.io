@@ -24,37 +24,20 @@ entries:
     folderitems:
 
     - title: 2.1 概述
-      url: /mydoc_tag_archives_overview.html
+      url: 
       output: web
 
       subfolders:
-      - title: 2.2 高性能三方库
+      - title: 2.2 c++11
         output: web
         subfolderitems:
 
-        - title: 2.2.1 json
-          url: /tag_formatting.html
+        - title: 使用"clock_gettime"或者"gettimeofday"获取当前时间
+          url: /fastest_get_cur_time.html
           output: web
 
-        - title: 2.2.2 日志
-          url: /tag_navigation.html
-          output: web
-          subfolderitems:
-
-      - title: 2.3 高性能语法
-        output: web
-        subfolderitems:
-
-        - title: 使用emplace_back, 而不是push_back
-          url: 
-          output: web
-
-        - title: 使用前置++，而不是后置++
-          url: 
-          output: web
-
-        - title: 使用原子变量，而不是锁+变量
-          url: 
+        - title: 使用"emplace"类函数向容器中添加数据
+          url: /use_emplace.html
           output: web
 
 #  - title: 3 CPU密集型应用架构设计
