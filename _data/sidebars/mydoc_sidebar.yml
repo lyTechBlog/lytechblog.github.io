@@ -40,6 +40,14 @@ entries:
           url: /use_emplace.html
           output: web
 
+  - title: 3 架构设计
+    output: web
+    folderitems:
+
+    - title: 3.1 分布式架构系统设计思想
+      url: /architecture.html
+      output: web
+
 #  - title: 3 CPU密集型应用架构设计
 #    output: web
 #    folderitems:
