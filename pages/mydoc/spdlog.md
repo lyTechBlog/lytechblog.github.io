@@ -10,7 +10,7 @@ folder: mydoc
 ### 结论延伸（建议读者学习spdlog后查看）
 - 性能：使用2个线程时，每条日志1kb，可以达到16G/min。这个日志量，对大部分业务是足够的。
 - spdlog瓶颈：spdlog的sink_it（作用是format字符串、调用std::fwrite），是加锁的，也就是无论初始化spdlog的线程池初始化多少个，sink_it效率和单线程无异，而std::fwrite就是其性能瓶颈。所以，想要更快的性能的写日志方式是可行的。通过改spdlog源码，是可以实现的，这个我之后会再开一篇blog记录。
-- 新增功能：spdlog不支持分钟级别数据轮转，且保持当前写文件的名称不变的需求，在文末，我贴上我的sink源码。测试源码：
+- 新增功能：spdlog不支持分钟级别数据轮转，且保持当前写文件的名称不变的需求，在文末，我贴上我的sink源码。测试源码：[https://github.com/lyTechBlog/blog_example_code/tree/example/spdlog](https://github.com/lyTechBlog/blog_example_code/tree/example/spdlog)
 
 ## 环境说明
 代码运行在32核linux机器，g++版本4.85，系统版本centos7。磁盘是挂载的云盘，单线程实际写入性能约20G/min
