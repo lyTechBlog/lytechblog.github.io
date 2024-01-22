@@ -26,9 +26,9 @@ entries:
     - title: 2.1 概述
       url: 
       output: web
-
+    
       subfolders:
-      - title: 2.2 c++11
+      - title: 2.2 计算
         output: web
         subfolderitems:
 
@@ -38,6 +38,13 @@ entries:
 
         - title: 使用"emplace"类函数向容器中添加数据
           url: /use_emplace.html
+          output: web
+
+      - title: 2.3 I/O
+        output: web
+        subfolderitems:
+        - title: 使用高性能日志库spdlog
+          url: /spdlog.html
           output: web
 
   - title: 3 架构设计
